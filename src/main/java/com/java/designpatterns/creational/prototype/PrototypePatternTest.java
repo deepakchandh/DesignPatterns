@@ -1,6 +1,6 @@
 package com.java.designpatterns.creational.prototype;
 
-// generally used to avoid unnecessary creation od new objects
+// generally used to avoid unnecessary creation of new objects
 
 import java.util.ArrayList;
 import java.util.List;
