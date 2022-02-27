@@ -3,6 +3,7 @@ package com.java.designpatterns.structural.composite;
 import java.util.ArrayList;
 import java.util.List;
 
+// should be used when a group of objects should behave as a single object
 //Base Component
 interface Shape{
     public void draw(String fillColor);
@@ -23,7 +24,8 @@ class Circle implements Shape{
     }
 }
 
-//Composite object
+//Composite pattern on leaf objects- key part
+// it contains a group of leaf objects and provide methods for add, delete, deleteAll from group
 class Drawing implements Shape{
 
     private List<Shape> shapes = new ArrayList<>();

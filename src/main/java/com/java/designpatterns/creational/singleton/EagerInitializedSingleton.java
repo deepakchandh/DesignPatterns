@@ -2,6 +2,7 @@ package com.java.designpatterns.creational.singleton;
 
 public class EagerInitializedSingleton {
 
+    // created instance of singleton in static initializer
     private static final EagerInitializedSingleton instance = new EagerInitializedSingleton();
 
     //private constructor to avoid client applications to use constructor

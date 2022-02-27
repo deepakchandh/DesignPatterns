@@ -1,7 +1,7 @@
 package com.java.designpatterns.structural.bridge;
 
 // The implementation of bridge design pattern follows the notion to prefer Composition over inheritance.
-// Composition is generally used to bring in Multiple inheritance in Java
+// it is used to deCouple interfaces from impl and hiding impl details from client prgm
 interface Color{
     public void applyColor();
 }
@@ -44,7 +44,7 @@ class RedColor implements Color{
 
     @Override
     public void applyColor() {
-        System.out.println("red.");
+        System.out.println("Red.");
     }
 }
 

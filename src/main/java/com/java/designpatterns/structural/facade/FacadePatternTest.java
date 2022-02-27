@@ -1,7 +1,7 @@
 package com.java.designpatterns.structural.facade;
 
 import java.sql.Connection;
-
+//  Facade deals with interfaces, not implementation. Its purpose is to hide internal complexity behind a single interface that appears simple on the outside.
 class MysqlHelper{
     public static Connection getMySqlDBConnection(){
         return null;

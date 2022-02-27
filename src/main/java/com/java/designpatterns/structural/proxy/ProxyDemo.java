@@ -1,5 +1,4 @@
 package com.java.designpatterns.structural.proxy;
-// GeeksforGeeks Proxy pattern
 
 import java.util.ArrayList;
 import java.util.List;
