@@ -1,0 +1,9 @@
+/shelf/
+/workspace.xml
+*.class
+*.lock
+*.properties
+*.bin
+*.probe
+*.xml
+*.idea

@@ -2,6 +2,9 @@ package com.java.designpatterns.behavioral.chainofresp;
 
 import java.util.Scanner;
 
+// --> lets you process request along the chain of handlers. Upon receiving the request, each handler decides it should process the request
+// or to pass it to next handler of the chain
+
 class Currency{
     private int amount;
 

@@ -1,6 +1,8 @@
 package com.java.designpatterns.structural.decorator;
 
-// modify the functionality of the object in runtime
+// https://refactoring.guru/design-patterns/decorator/java/example - Decorator Pattern
+
+// structural pattern that allows adding new behaviors to objects dynamically by placing them inside special wrapper objects, called decorators.
 interface Car {
     public void assemble();
 }
