@@ -42,7 +42,7 @@ class LightOffCommand implements Command{
         light.off();
     }
 }
-
+/*
 class Stereo
 {
     public void on()
@@ -100,7 +100,7 @@ class StereoOnWithCDCommand implements Command
         stereo.setCD();
         stereo.setVolume(11);
     }
-}
+}*/
 
 class SimpleRemoteControl{
     Command command;
@@ -123,7 +123,7 @@ public class CommandPattern {
     {
         SimpleRemoteControl remote =  new SimpleRemoteControl();
         Light light = new Light();
-        Stereo stereo = new Stereo();
+//        Stereo stereo = new Stereo();
 
         remote.setCommand(new LightOnCommand(light));
         remote.buttonPressed();
@@ -132,11 +132,9 @@ public class CommandPattern {
         remote.buttonPressed();
 
 
-        remote.setCommand(new
-                StereoOnWithCDCommand(stereo));
+//        remote.setCommand(new StereoOnWithCDCommand(stereo));
         remote.buttonPressed();
-        remote.setCommand(new
-                StereoOffCommand(stereo));
+//        remote.setCommand(new StereoOffCommand(stereo));
         remote.buttonPressed();
     }
 

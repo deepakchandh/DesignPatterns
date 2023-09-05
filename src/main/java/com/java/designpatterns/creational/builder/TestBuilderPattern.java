@@ -1,5 +1,7 @@
 package com.java.designpatterns.creational.builder;
 
+//Separate the construction of a complex object from its representation
+// so that the same construction process can create multiple different representations.
 class Computer {
 
     private String HDD;

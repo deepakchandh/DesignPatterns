@@ -28,7 +28,7 @@ interface Subject{
     void notifyObservers();
 }
 
-class MediumBlogPost implements Subject{
+class Mediums implements Subject{
 
     private String post;
     private List<Observer> listOfObserver = new ArrayList<>();
@@ -62,7 +62,7 @@ public class ObserverDesignPattern {
         SocialMediaPost socialMediaPost = new SocialMediaPost();
         SubscribedUserNotifier subscribedUserNotifier = new SubscribedUserNotifier();
 
-        MediumBlogPost mediumBlogPost = new MediumBlogPost();
+        Mediums mediumBlogPost = new Mediums();
         mediumBlogPost.addObserver(socialMediaPost);
         mediumBlogPost.addObserver(subscribedUserNotifier);
         mediumBlogPost.newPost("Analysis of Design Patterns");

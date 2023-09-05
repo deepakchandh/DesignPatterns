@@ -27,6 +27,8 @@ class Employees implements Cloneable{
         return empList;
     }
 
+
+    // the concept of creating an existing object instead of creating them newly.
     @Override
     public Object clone() throws CloneNotSupportedException{
         List<String> temp =  new ArrayList<>();

@@ -2,9 +2,29 @@ package com.java.designpatterns.structural.bridge;
 
 // The implementation of bridge design pattern follows the notion to prefer Composition over inheritance.
 // it is used to deCouple interfaces from impl and hiding impl details from client prgm
+
+// shape has set of types
+// colors has set of colors
+
 interface Color{
     public void applyColor();
 }
+class RedColor implements Color{
+
+    @Override
+    public void applyColor() {
+        System.out.println("Red.");
+    }
+}
+
+class GreenColor implements Color{
+
+    @Override
+    public void applyColor() {
+        System.out.println("Green.");
+    }
+}
+
 
 abstract class Shape{
     protected Color color;
@@ -40,21 +60,6 @@ class Pentagon extends Shape{
     }
 }
 
-class RedColor implements Color{
-
-    @Override
-    public void applyColor() {
-        System.out.println("Red.");
-    }
-}
-
-class GreenColor implements Color{
-
-    @Override
-    public void applyColor() {
-        System.out.println("Green.");
-    }
-}
 
 public class BridgePatternTest {
     public static void main(String[] args) {

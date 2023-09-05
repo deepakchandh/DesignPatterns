@@ -6,6 +6,7 @@ package com.java.designpatterns.structural.flyweight;
 
 // we use hashmap here, for getting and creating objects
 
+// --> sharing state among a large number of fine-grained objects for efficiency.
 import java.util.HashMap;
 import java.util.Random;
 
