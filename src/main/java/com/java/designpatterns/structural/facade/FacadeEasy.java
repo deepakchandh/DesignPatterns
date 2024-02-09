@@ -2,7 +2,7 @@ package com.java.designpatterns.structural.facade;
 
 //https://www.tutorialspoint.com/design_pattern/facade_pattern.htm
 
-// Hides the complexcities and provides interface to the client using which client can access the system.
+// Hides the complexities and provides interface to the client using which client can access the system.
 
 // This is more like a factory pattern..
 // In Factory, we dynamically create objects for the requested type,

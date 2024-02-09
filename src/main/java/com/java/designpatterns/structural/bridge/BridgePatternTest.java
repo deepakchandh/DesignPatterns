@@ -6,6 +6,8 @@ package com.java.designpatterns.structural.bridge;
 // shape has set of types
 // colors has set of colors
 
+// Decouple the functional abs from impl so that two can vary independtly
+
 interface Color{
     public void applyColor();
 }
