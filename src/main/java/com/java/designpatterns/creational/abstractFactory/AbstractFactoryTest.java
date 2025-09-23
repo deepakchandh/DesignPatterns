@@ -5,6 +5,12 @@ In the Abstract Factory pattern, we get rid of if-else block and have a factory 
 Then an Abstract Factory class that will return the sub-class based on the input factory class.
 
  */
+
+
+/*
+Factory Method = 1 product, many variants
+Abstract Factory = multiple related products, grouped variants (families)
+ */
 abstract class Computer {
 
     public abstract String getRAM();

@@ -1,5 +1,7 @@
 package com.java.designpatterns.structural.flyweight;
 
+
+// Primarily designed to reduce the number of object created and decrease memory footprint and increase performance.
 // Provides ways to decrease the object count
 // Particularly used when we need to create large no of similar objects
 // FlyWeight objects are immutable

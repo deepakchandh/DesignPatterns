@@ -15,6 +15,14 @@ class BasicCar implements Car {
         System.out.print("Basic Car.");
     }
 }
+class ElectricCar implements Car {
+    @Override
+    public void assemble() {
+        System.out.print("Electric Car.");
+    }
+}
+
+
 // it implements component interface and it has HAS-A relationship with component interface
 
 class CarDecorator implements Car{
@@ -62,7 +70,7 @@ public class DecoratorDesignPattern {
         sportsCar.assemble();
         System.out.println("\n*****");
         // defining with which ever objects I want, during the run-time
-        Car sportsLuxuryCar = new SportsCar(new LuxuryCar(new BasicCar()));
+        Car sportsLuxuryCar = new SportsCar(new LuxuryCar(new ElectricCar()));
         sportsLuxuryCar.assemble();
     }
 }

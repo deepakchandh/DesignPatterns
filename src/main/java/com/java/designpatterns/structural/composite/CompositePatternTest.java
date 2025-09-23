@@ -3,6 +3,9 @@ package com.java.designpatterns.structural.composite;
 import java.util.ArrayList;
 import java.util.List;
 
+
+// Lets you compose objects as tree structures and then work with these structures as individual objects.
+
 // should be used when a group of objects should behave as a single object
 //Base Component
 interface Shape{

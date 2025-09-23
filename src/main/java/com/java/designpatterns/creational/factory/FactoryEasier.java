@@ -4,6 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/*
+// To remember
+Factory Method = 1 product, many variants
+Abstract Factory = multiple related products, grouped variants (families)
+ */
+
 abstract class Plan{
     protected double rate;
 

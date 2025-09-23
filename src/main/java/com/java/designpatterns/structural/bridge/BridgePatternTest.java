@@ -8,6 +8,8 @@ package com.java.designpatterns.structural.bridge;
 
 // Decouple the functional abs from impl so that two can vary independtly
 
+// Lets you split large classes or Set of closely related classes into 2 hierarchies. - abstraction and implementation.
+
 interface Color{
     public void applyColor();
 }
