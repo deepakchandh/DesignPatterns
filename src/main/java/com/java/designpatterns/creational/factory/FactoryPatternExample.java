@@ -1,21 +1,16 @@
 package com.java.designpatterns.creational.factory;
 
 class Account{
-    String id;
-    String name;
+    private final String id;
+    private final String name;
 
     public Account(String id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
+    public String getId() { return id; }
+    public String getName() { return name; }
 }
 
 interface AccountRepository{
@@ -28,12 +23,13 @@ class UserRepository implements AccountRepository {
 
     @Override
     public Account createAccount(Account account) {
+        System.out.println("User account created: " + account.getName());
         return account;
     }
 
     @Override
-    public void resetPwd(String userId, String pwd) {
-
+    public void resetPwd(String userId, String newPassword) {
+        System.out.println("User password reset for ID: " + userId);
     }
 }
 
@@ -41,12 +37,13 @@ class DriverRepository implements AccountRepository {
 
     @Override
     public Account createAccount(Account account) {
-        return null;
+        System.out.println("Admin account created: " + account.getName());
+        return account;
     }
 
     @Override
     public void resetPwd(String userId, String pwd) {
-
+        System.out.println("Admin password reset for ID: " + userId);
     }
 }
 
@@ -87,10 +84,11 @@ class AccountFactory{
 public class FactoryPatternExample {
 
     public static void main(String[] args) {
-        UserRepository userRepository = (UserRepository) AccountFactory.getAccountRepo(AccountType.USER);
-        AdminRepository adminRepository = (AdminRepository) AccountFactory.getAccountRepo(AccountType.ADMIN);
-        Account account = userRepository.createAccount(new Account("88", "deepak"));
-        System.out.println(account.getId());
+        AccountRepository userRepo = AccountFactory.getAccountRepo(AccountType.USER);
+        Account user = userRepo.createAccount(new Account("88", "Deepak"));
+        userRepo.resetPwd(user.getId(), "newPass123");
+
+        System.out.println("Account created with ID: " + user.getId());
 
 
     }

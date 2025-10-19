@@ -19,8 +19,12 @@ class UpiPayment implements PaymentStrategy {
 // Context
 class ShoppingCart {
     private PaymentStrategy strategy;
-    public ShoppingCart(PaymentStrategy strategy) { this.strategy = strategy; }
-    public void checkout(int amount) { strategy.pay(amount); }
+    public ShoppingCart(PaymentStrategy strategy) {
+        this.strategy = strategy;
+    }
+    public void checkout(int amount) {
+        strategy.pay(amount);
+    }
 }
 
 public class StrategyDemo {
