@@ -5,6 +5,14 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/*
+THE DATA may be from different source in different styles like JSON, XML(soap), graphql.
+
+with my HotelSupplierClient I try to have data in the format of List<HotelPrice>.
+ */
+
+
+
 interface HotelSupplierClient {
     List<HotelPrice> fetchPrices(HotelSearchRequest request);
 }

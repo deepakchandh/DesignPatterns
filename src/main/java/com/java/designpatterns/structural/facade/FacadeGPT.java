@@ -18,6 +18,8 @@ Question:
 👉 Which design pattern would best solve this?
  */
 
+
+// Facade Pattern provides a simple unified interface to a complex system.
 class AvailabilityService {
     public boolean check() {
         System.out.println("Checking availability...");
