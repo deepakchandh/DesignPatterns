@@ -2,6 +2,33 @@ package com.java.designpatterns.behavioral.state.gptbooking;
 // https://chatgpt.com/c/68f75142-c180-8323-9246-c7b674a046f8
 
 // State Pattern implementation for a Booking.com–style hotel booking lifecycle.
+
+/*
+How Command & State Patterns Work Together
+
+* Command Pattern captures user actions
+
+* State Pattern decides if they are allowed
+
+Example:
+
+User clicks Cancel → creates CancelCommand
+
+But booking is Checked In → state pattern blocks cancellation
+
+
+More crisp::
+
+State Pattern models the lifecycle and business rules of an entity.
+Command Pattern represents actions performed by users or the system.
+
+Or more crisp:
+
+State = system mode.
+Command = user/system action.
+ */
+
+
 interface BookingState {
 
     void next(Booking booking);
